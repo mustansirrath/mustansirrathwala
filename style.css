@@ -1,0 +1,453 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+}
+
+h3::selection{
+  background-color: #ff7900;
+  color: black;
+}
+
+p::selection{
+  color: black;
+  background-color: #ff7900;
+}
+
+:root {
+  --colorone: #ff7900;
+  --coloratwo: #ffba08;
+  --colorbody: #1e1e1e;
+}
+@font-face {
+  font-family: mediumfont;
+  src: url("./Fonts/creato_display/CreatoDisplay-Medium.otf");
+}
+@font-face {
+  font-family: largefont;
+  src: url("./Fonts/creato_display/CreatoDisplay-ExtraBold.otf");
+}
+@font-face {
+  font-family: boldfont;
+  src: url("./Fonts/creato_display/CreatoDisplay-Bold.otf");
+}
+
+.main-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: rgba(211, 211, 211, 0);
+  background-size: 300% 100%;
+  animation: gradient 15s ease infinite;
+  position: fixed;
+  z-index: 1000;
+}
+
+.navbar {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(211, 211, 211, 0.135);
+  margin: 10px;
+  border-radius: 5px;
+  padding: 20px 10px;
+  border: solid 1.5px transparent;
+  backdrop-filter: blur(70px);
+}
+
+.navbar:hover {
+  animation: navbar-animation 7s infinite linear;
+}
+
+@keyframes navbar-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#menu-close, #menu-btn{
+  display: none;
+}
+
+.navIcons {
+  font-size: 14px;
+}
+
+.logo-side .logo {
+  width: 5rem;
+}
+
+.ul-links {
+  display: flex;
+  align-items: center;
+}
+
+.ul-links li {
+  padding: 10px;
+  list-style: none;
+  margin: 0px 5px;
+}
+
+.ul-links li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.765);
+  font-family: mediumfont;
+  font-size: 18px;
+  letter-spacing: 0.3px;
+}
+
+.main-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(-90deg, #000, #000, #391c04, #000);
+  background-size: 300% 100%;
+  animation: gradient 15s ease infinite;
+}
+
+.information-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-text .info-heading {
+  font-family: largefont;
+  color: white;
+  font-size: 4rem;
+  word-wrap: normal;
+  text-align: center;
+}
+
+.nameEffect {
+  background: linear-gradient(90deg, #ff7900, #ffba08, #dc2f02);
+  background-size: 300% 100%;
+  background-clip: text;
+  color: transparent;
+  transition: ease-in-out;
+  animation: gradient-animation 7s infinite linear;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.info-buttons button {
+  background-color: #fff;
+  border: 1px solid white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: boldfont;
+  transition: 0.3s ease-in-out;
+  margin: 10px 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.info-buttons i {
+  font-size: 16px;
+}
+
+.info-buttons button:hover {
+  background-color: black;
+  color: white;
+  /* background: linear-gradient(var(--colorbody), var(--colorbody)) padding-box,
+    linear-gradient(0deg, var(--coloratwo) 0%, var(--colorone) 100%) border-box; */
+  border: solid 1px white;
+}
+
+.aboutMeSection {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  /* background-color: #dc2e02d2; */
+  padding: 4rem 1rem;
+}
+
+.left-side-boxes {
+  width: 40%;
+  margin-right: 2em;
+}
+
+.right-side-boxes {
+  width: 40%;
+}
+
+.left-side-boxes .intro {
+  background-color: rgba(211, 211, 211, 0.078);
+  padding: 25px;
+  color: white;
+  border-radius: 7px;
+  border: 1px solid rgba(211, 211, 211, 0.122);
+}
+
+.left-side-boxes .skills {
+  /* margin-top: 40px; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 15px;
+  background-color: rgba(211, 211, 211, 0.078);
+  color: white;
+  border-radius: 7px;
+  border: 1px solid rgba(211, 211, 211, 0.122);
+}
+
+.skills div{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills p {
+  margin: 7px 10px;
+  font-family: mediumfont;
+  font-size: 17px;
+  background-color: rgba(255, 255, 255, 0.113);
+  color: white;
+  padding: 7px 12px;
+  border-radius: 20px;
+}
+
+.intro p {
+  word-wrap: normal;
+  font-family: mediumfont;
+  font-size: 18px;
+  letter-spacing: 0.4px;
+}
+
+.intro h3 {
+  margin-bottom: 20px;
+  font-size: 27px;
+  font-family: boldfont;
+}
+
+.right-side-boxes .education {
+  background-color: rgba(211, 211, 211, 0.078);
+  padding: 25px;
+  color: white;
+  border-radius: 7px;
+  border: 1px solid rgba(211, 211, 211, 0.122);
+}
+
+.left-side-boxes .education {
+  background-color: rgba(211, 211, 211, 0.078);
+  padding: 25px;
+  color: white;
+  border-radius: 7px;
+  border: 1px solid rgba(211, 211, 211, 0.122);
+}
+
+.right-side-boxes .experience a{
+  color: white;
+  text-decoration: none;
+}
+
+.education .mx-bottom {
+  margin-bottom: 30px;
+}
+
+.education .p-all{
+  padding: 10px;
+}
+
+.education .firstBox p {
+  font-family: mediumfont;
+  margin: 5px 0px;
+  letter-spacing: 0.5px;
+}
+
+.education .firstBox span {
+  font-weight: bold;
+}
+
+.education h3 {
+  margin-bottom: 20px;
+  font-size: 27px;
+  font-family: boldfont;
+}
+
+.skills h3 {
+  margin-bottom: 20px;
+  font-size: 27px;
+  font-family: boldfont;
+}
+
+.technologies{
+  margin-top: 40px;
+}
+
+.technologies-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tech-box{
+  margin: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.tech-text {
+  display: none;
+  position: absolute;
+  top: -70%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #dc2f02;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+  font-family: mediumfont;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  animation: fadeInUp 0.3s ease forwards;
+}
+
+.tech-box:hover .tech-text {
+  display: block;
+  opacity: 1;
+  transform: translateX(-50%) translateY(-10px);
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-10px);
+  }
+}
+
+.icons {
+  font-size: 35px;
+}
+
+.block{
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+  transition: 0.3s all ease;
+  border: 1px solid rgba(211, 211, 211, 0.243);
+}
+
+@keyframes appear {
+  from{
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.experienceHr{
+  margin: 10px 0px;
+  background-color: rgba(211, 211, 211, 0.153);
+  
+}
+
+.mx-res{
+  margin: 50px 10px;
+}
+
+.openForWork{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 2rem;
+  margin-top: 4rem;
+}
+
+.mainHeading h3, p{
+  color: white;
+}
+
+.mainHeading h3{
+  font-family: boldfont;
+  font-size: 35px;
+}
+
+.mainHeading p{
+  font-family: mediumfont;
+  margin-top: 5px;
+}
+
+.whyBox{
+  border: 1px solid lightgray;
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid rgba(211, 211, 211, 0.122);
+  border-radius: 7px;
+  width: 80%;
+  background-color: rgba(211, 211, 211, 0.078);
+}
+
+.whyBox h3{
+  font-family: boldfont;
+  color: white;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.whyBox p{
+  font-family: mediumfont;
+  color: white;
+  margin-top: 10px;
+  word-wrap: normal;
+  font-size: 17px;
+}
+
+.whyChooseSection{
+  display: flex;
+  margin-top: 2rem;
+}
+
+.whyHr{
+  border-color: rgba(255, 255, 255, 0.211);
+}
