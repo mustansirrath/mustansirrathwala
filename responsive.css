@@ -3,7 +3,6 @@
         display: flex;
         justify-content: center;
         padding: 20px;
-        /* background-color: #dc2f02; */
         flex-direction: column;
         padding: 4rem 2rem;
         width: 100%;
@@ -44,11 +43,10 @@
         position: absolute;
         top: 0;
         right: -800px;
-        width: 100%;
+        width: 725px;
         height: 100vh;
         transition: 0.6s all;
         background-color: #ff7900;
-        border-top-left-radius: 25%;
     }
 
     .ul-links li{
