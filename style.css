@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -57,7 +59,6 @@ p::selection{
   margin: 10px;
   border-radius: 5px;
   padding: 20px 10px;
-  border: solid 1.5px transparent;
   backdrop-filter: blur(70px);
 }
 
@@ -376,7 +377,7 @@ p::selection{
 @keyframes appear {
   from{
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-20px);
   }
 
   to{
@@ -455,8 +456,11 @@ p::selection{
 .projects{
   width: 100%;
   height: auto;
-  padding: 0rem 2rem;
+  padding: 2rem 2rem;
   margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .mainProjectContainer{
@@ -473,12 +477,20 @@ p::selection{
 
 .projectsBoxes{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3rem;
 }
 
+
 .projectBox{
-  margin: 10px;
+  margin: 15px;
   padding: 10px;
-  width: 35em;
+  padding: 10px;
+  border: 1px solid rgba(211, 211, 211, 0.122);
+  background-color: rgba(211, 211, 211, 0.078);
+  border-radius: 7px;
+  width: 27em;
 }
 
 .projectBox h3,p{
@@ -487,12 +499,14 @@ p::selection{
 
 .projectBox h3{
   font-family: boldFont;
+  margin: 5px 0px;
 }
 
 .projectBox p{
   word-wrap: normal;
   margin-top: 10px;
   font-family: mediumfont;
+  margin-bottom: 10px;
 }
 
 .projectBox .imageProject {
@@ -500,10 +514,50 @@ p::selection{
 }
 
 .projectBox .imageProject .project-img{
-  width: 26rem;
-  border-radius: 10px;
+  width: 25rem;
+  border-radius: 7px;
+}
+
+.projectBox .imageProject .project-img:hover{
+  cursor: url("./Images/cursor.png");
+  scale: 1.03;
+  transition: 0.4 ease;
 }
 
 .projectName{
   margin-bottom: 10px;
+}
+
+.email{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  background-color: #391c04;
+}
+
+.contactInfo{
+  text-align: center;
+}
+
+.contactInfo p{
+  font-family: mediumfont;
+  font-size: 19px;
+}
+
+.contactInfo h2{
+  font-family: "Libre Baskerville", serif;
+  margin-top: 15px;
+}
+
+.contactInfo a{
+  color: white;
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+
+.projectBox a{
+  text-decoration: none;
 }

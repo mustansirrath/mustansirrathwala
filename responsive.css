@@ -199,3 +199,10 @@
         margin: 7px 4px;
     }
 } 
+
+@media only screen and (max-width: 435px){
+    .projectBox .imageProject .project-img {
+        width: 21rem;
+        border-radius: 7px;
+    }
+}
