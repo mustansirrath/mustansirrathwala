@@ -206,3 +206,45 @@
         border-radius: 7px;
     }
 }
+
+@media only screen and (max-width: 550px) {
+    .contactInfo a {
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+
+    .contactInfo a {
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 427px) {
+    .contactInfo a {
+        color: white;
+        text-decoration: none;
+        font-size: 13px;
+    }
+}
+
+
+@media only screen and (max-width: 360px) {
+    .projectBox .imageProject .project-img {
+        width: 18rem;
+        border-radius: 7px;
+    }
+
+    .contactInfo p {
+        font-family: mediumfont;
+        font-size: 16px;
+        word-wrap: normal;
+    }
+
+    .contactInfo a {
+        color: white;
+        text-decoration: none;
+        font-size: 10px;
+    }
+}

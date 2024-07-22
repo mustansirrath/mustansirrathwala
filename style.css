@@ -540,22 +540,25 @@ p::selection{
 
 .contactInfo{
   text-align: center;
+  padding: 15px;
 }
 
 .contactInfo p{
   font-family: mediumfont;
   font-size: 19px;
+  word-wrap: normal;
 }
 
 .contactInfo h2{
   font-family: "Libre Baskerville", serif;
   margin-top: 15px;
+  word-wrap: normal;
 }
 
 .contactInfo a{
   color: white;
   text-decoration: none;
-  font-size: 2.5rem;
+  font-size: 1.3rem;
 }
 
 .projectBox a{
