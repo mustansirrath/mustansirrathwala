@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 
 * {
   margin: 0;
@@ -7,7 +7,7 @@
   scroll-behavior: smooth;
 }
 
-body {
+.bg-change-black{
   background-color: black;
 }
 
@@ -80,6 +80,17 @@ p::selection{
 
 #menu-close, #menu-btn{
   display: none;
+}
+
+.navigation{
+  display: flex;
+  align-items: center;
+}
+
+#theme-white{
+  color: white;
+  font-size: 24px;
+  margin: 0px 10px;
 }
 
 .navIcons {
@@ -540,7 +551,6 @@ p::selection{
 
 .contactInfo{
   text-align: center;
-  padding: 15px;
 }
 
 .contactInfo p{
@@ -550,17 +560,46 @@ p::selection{
 }
 
 .contactInfo h2{
-  font-family: "Libre Baskerville", serif;
+  font-family: "Caveat", cursive;
   margin-top: 15px;
-  word-wrap: normal;
-}
-
-.contactInfo a{
   color: white;
-  text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 2.5rem;
 }
 
 .projectBox a{
   text-decoration: none;
+}
+
+.footerSection{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.footerSection .icons i{
+  color: white;
+  font-size: 30px;
+  margin: 0px 10px;
+}
+
+.icons i:hover{
+  animation: iIcons 5s infinite linear;
+  background: linear-gradient(90deg, #ff7900, #ffba08, #dc2f02);
+  background-size: 300% 100%;
+  background-clip: text;
+  color: transparent;
+  transition: 0.3s all ease;
+}
+
+@keyframes iIcons {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
