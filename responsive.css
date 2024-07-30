@@ -248,3 +248,48 @@
         font-size: 10px;
     }
 }
+
+@media only screen and (max-width: 570px) {
+    .formBox form input {
+        width: 30rem;
+    }
+    
+    .formBox form textarea {
+        width: 30rem;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .formBox form input {
+        width: 25rem;
+    }
+
+    .formBox form textarea {
+        width: 25rem;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .heading {
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+
+    .formBox form input {
+        width: 20rem;
+    }
+
+    .formBox form textarea {
+        width: 20rem;
+    }
+}
+
+@media only screen and (max-width: 346px) {
+    .formBox form input {
+        width: 16rem;
+    }
+
+    .formBox form textarea {
+        width: 16rem;
+    }
+}
