@@ -8,17 +8,17 @@
 }
 
 .bg-change-black{
-  background-color: black;
+  background-color: white;
 }
 
 h3::selection{
-  background-color: #1f51ff;
+  background-color: #ffd2ae77;
   color: black;
 }
 
 p::selection{
   color: black;
-  background-color: #1f51ff;
+  background-color: #ffd2ae77;
 }
 
 :root {
@@ -56,7 +56,7 @@ p::selection{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: rgba(211, 211, 211, 0.135);
+  background-color: #ffd2aeda;
   margin: 10px;
   border-radius: 5px;
   padding: 20px 10px;
@@ -74,7 +74,7 @@ p::selection{
 }
 
 #theme-white{
-  color: white;
+  color: #612407;
   font-size: 24px;
   margin: 0px 10px;
 }
@@ -100,7 +100,7 @@ p::selection{
 
 .ul-links li a {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.765);
+  color: rgb(97, 36, 7);
   font-family: mediumfont;
   font-size: 18px;
   letter-spacing: 0.3px;
@@ -112,8 +112,8 @@ p::selection{
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(-90deg, #000, #000, #1f50ff5b, #000);
-  background-size: 300% 100%;
+  /* background: linear-gradient(-90deg, #fff, #fff, #612407, #fff); */
+  background-size: 500% 100%;
   animation: gradient 25s ease infinite;
 }
 
@@ -125,14 +125,14 @@ p::selection{
 
 .info-text .info-heading {
   font-family: largefont;
-  color: white;
+  color: #612407;
   font-size: 4rem;
   word-wrap: normal;
   text-align: center;
 }
 
 .nameEffect {
-  background: linear-gradient(90deg, #1f51ff, #ffff, #0096ff);
+  background: linear-gradient(90deg, #612407, #ffd2aeda, #b64a18);
   background-size: 300% 100%;
   background-clip: text;
   color: transparent;
@@ -153,7 +153,7 @@ p::selection{
 }
 
 .info-buttons button {
-  background-color: #fff;
+  background-color: #612407;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -162,6 +162,7 @@ p::selection{
   margin: 10px 5px;
   font-size: 15px;
   cursor: pointer;
+  color: #ffd2ae;
 }
 
 .info-buttons i {
@@ -195,7 +196,6 @@ p::selection{
   display: flex;
   justify-content: center;
   padding: 20px;
-  /* background-color: #dc2e02d2; */
   padding: 4rem 1rem;
 }
 
@@ -209,10 +209,10 @@ p::selection{
 }
 
 .left-side-boxes .intro {
-  background-image: url('./Images/website-box-bg-01-01-01-01.png');
+  background-color: #ffeee077;
   background-size: cover;
   padding: 25px;
-  color: white;
+  color: rgb(97, 36, 7);
   border-radius: 7px;
   border: none;
 }
@@ -223,11 +223,11 @@ p::selection{
   flex-direction: column;
   flex-wrap: wrap;
   padding: 15px;
-  color: white;
+  color: rgb(97, 36, 7);
   border-radius: 7px;
   border: none;
   background-size: cover;
-  background-image: url('./Images/website-box-bg-01-01-01-01.png');
+  background-color: #ffeee077;
 }
 
 .skills div{
@@ -239,14 +239,14 @@ p::selection{
   margin: 7px 10px;
   font-family: mediumfont;
   font-size: 17px;
-  background-color: rgba(255, 255, 255, 0.486);
-  color: #1e1e1e;
+  background-color: rgba(255, 178, 111, 0.486);
+  color: rgb(97, 36, 7);
   padding: 7px 12px;
   border-radius: 20px;
 }
 
 .skills h3{
-  color: #1e1e1e;
+  color: rgb(97, 36, 7);
 }
 
 .intro p {
@@ -254,31 +254,31 @@ p::selection{
   font-family: mediumfont;
   font-size: 18px;
   letter-spacing: 0.4px;
-  color: #1e1e1e;
+  color: rgb(97, 36, 7);
 }
 
 .intro h3 {
   margin-bottom: 20px;
   font-size: 27px;
   font-family: boldfont;
-  color: #1e1e1e;
+  color: rgb(97, 36, 7);
   font-weight: bolder;
 }
 
 .right-side-boxes .education {
   background-size: cover;
-  background-image: url('./Images/website-box-bg-01-01-01-01.png');
+  background-color: #ffeee077;
   padding: 25px;
-  color: white;
+  color: rgb(97, 36, 7);
   border-radius: 7px;
   border: none;
 }
 
 .left-side-boxes .education {
   background-size: cover;
-  background-image: url('./Images/website-box-bg-01-01-01-01.png');
+  background-color: #ffeee077;
   padding: 25px;
-  color: white;
+  color: rgb(97, 36, 7);
   border-radius: 7px;
   border: none;
 }
@@ -297,7 +297,7 @@ p::selection{
 }
 
 .education .firstBox{
-  background-color: #ffffff83;
+  background-color: #ffd2ae77;
   border-radius: 7px;
   padding: 10px;
 }
@@ -306,7 +306,7 @@ p::selection{
   font-family: mediumfont;
   margin: 5px 0px;
   letter-spacing: 0.5px;
-  color: #1e1e1e;
+  color: rgb(97, 36, 7);
 }
 
 .education .firstBox span {
@@ -317,7 +317,7 @@ p::selection{
   margin-bottom: 20px;
   font-size: 27px;
   font-family: boldfont;
-  color: #1e1e1e;
+  color: rgb(97, 36, 7);
 }
 
 .skills h3 {
@@ -344,11 +344,11 @@ p::selection{
 .tech-text {
   display: none;
   position: absolute;
-  top: -70%;
+  top: -55%;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #1f51ff;
-  color: white;
+  background-color: #ffd2ae;
+  color: rgb(97, 36, 7);
   padding: 5px 10px;
   border-radius: 15px;
   font-size: 14px;
@@ -380,7 +380,7 @@ p::selection{
   font-size: 35px;
 }
 
-/* .block{
+.block{
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
@@ -398,7 +398,7 @@ p::selection{
     opacity: 1;
     transform: translateX(0px);
   }
-} */
+}
 
 .experienceHr{
   margin: 10px 0px;
@@ -698,7 +698,7 @@ p::selection{
 }
 
 .formBox form .button:hover{
-  background-color: #1e1e1e;
+  background-color: rgb(97, 36, 7);
   border: 2px solid white;
   color: white;
 }
