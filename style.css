@@ -197,7 +197,7 @@ p::selection{
   display: flex;
   justify-content: center;
   padding: 20px;
-  padding: 4rem 1rem;
+  padding: 0rem 1rem;
 }
 
 .left-side-boxes {
@@ -424,18 +424,20 @@ p::selection{
   margin-top: 4rem;
 }
 
-.mainHeading h3, p{
+.mainHeading p{
   color: white;
 }
 
 .mainHeading h3{
   font-family: boldfont;
   font-size: 35px;
+  color: #612407;
 }
 
 .mainHeading p{
   font-family: mediumfont;
   margin-top: 5px;
+  color: black;
 }
 
 .whyBox{
@@ -493,8 +495,9 @@ p::selection{
 
 .projectHeading h2{
   font-family: boldFont;
-  color: white;
+  color: #612407;
   font-size: 35px;
+  text-align: center;
 }
 
 
