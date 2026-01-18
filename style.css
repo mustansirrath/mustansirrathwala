@@ -62,6 +62,7 @@ p::selection{
   padding: 20px 10px;
   backdrop-filter: blur(70px);
   border: none;
+  border: 1px solid rgba(40, 40, 40, 0.516);
 }
 
 #menu-close, #menu-btn{
@@ -509,14 +510,14 @@ p::selection{
   margin: 15px;
   padding: 10px;
   padding: 10px;
-  border: 1px solid rgba(211, 211, 211, 0.122);
-  background-color: rgba(211, 211, 211, 0.078);
+  border: 1px solid rgba(0, 0, 0, 0.093);
+  background-color: #a1471e0e;
   border-radius: 7px;
   width: 27em;
 }
 
-.projectBox h3,p{
-  color: white;
+.projectBox h3{
+  color: #612407;
 }
 
 .projectBox h3{
@@ -529,6 +530,7 @@ p::selection{
   margin-top: 10px;
   font-family: mediumfont;
   margin-bottom: 10px;
+  color: black;
 }
 
 .projectBox .imageProject {
@@ -591,7 +593,7 @@ p::selection{
 }
 
 .footerSection .icons i{
-  color: white;
+  color: #612407;
   font-size: 30px;
   margin: 0px 10px;
 }
@@ -626,6 +628,7 @@ p::selection{
   justify-content: center;
   padding: 20px;
   margin: 3rem 0rem;
+  background-color: #612407;
 }
 
 .heading {
@@ -669,7 +672,7 @@ p::selection{
   height: 30vh;
   padding: 15px 10px;
   margin: 5px 0px;
-  background-color: rgba(211, 211, 211, 0.078);
+  background-color: rgba(211, 211, 211, 0);
   color: lightgray;
   border: 1px solid rgba(211, 211, 211, 0.122);
   border-radius: 7px;
@@ -682,7 +685,7 @@ p::selection{
 }
 
 .heading span{
-  background: linear-gradient(90deg, #1f51ff, #0096ff);
+  background: linear-gradient(90deg, #ffc796, #e39352);
   background-size: 100% 100%;
   background-clip: text;
   color: transparent;
@@ -694,8 +697,8 @@ p::selection{
   font-family: mediumfont;
   border-radius: 7px; 
   margin-top: 10px;
-  background-color: #fff;
-  color: black;
+  background-color: #ffd2ae;
+  color: #612407;
   cursor: pointer;
   border: 2px solid rgba(211, 211, 211, 0.122);
   font-size: 16px;
