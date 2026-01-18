@@ -365,7 +365,7 @@ p::selection{
   transform: translateX(-50%) translateY(-10px);
 }
 
-@keyframes fadeInUp {
+/* @keyframes fadeInUp {
   0% {
     opacity: 0;
     transform: translateX(-50%) translateY(0);
@@ -398,7 +398,7 @@ p::selection{
     opacity: 1;
     transform: translateX(0px);
   }
-}
+} */
 
 .experienceHr{
   margin: 10px 0px;
