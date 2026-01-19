@@ -56,13 +56,13 @@ p::selection{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: #ffd2aeda;
+  /* background-color: #ffd2aeda; */
   margin: 10px;
   border-radius: 5px;
   padding: 20px 10px;
   backdrop-filter: blur(70px);
   border: none;
-  border: 1px solid rgba(40, 40, 40, 0.516);
+  border: 1px solid rgba(40, 40, 40, 0.211);
 }
 
 #menu-close, #menu-btn{
@@ -420,34 +420,32 @@ p::selection{
   height: auto;
   display: flex;
   flex-direction: column;
-  padding: 0rem 2rem;
+  padding: 2rem 2rem;
   margin-top: 4rem;
-}
-
-.mainHeading p{
-  color: white;
+  background-color: #612407;
 }
 
 .mainHeading h3{
   font-family: boldfont;
   font-size: 35px;
-  color: #612407;
+  color: #ffd2ae;
 }
 
 .mainHeading p{
   font-family: mediumfont;
   margin-top: 5px;
-  color: black;
+  color: rgba(255, 255, 255, 0.351);
 }
 
 .whyBox{
   border: 1px solid lightgray;
   margin: 20px;
-  padding: 15px;
+  padding: 10px;
   border: 1px solid rgba(211, 211, 211, 0.122);
   border-radius: 7px;
   width: 80%;
-  background-image: url('./Images/website-box-bg-01-01-01-01.png');
+  background-color: #ffd2ae;
+  /* background-image: url('./Images/website-box-bg-01-01-01-01.png'); */
   background-size: cover;
 }
 
@@ -464,9 +462,9 @@ p::selection{
   margin-top: 10px;
   word-wrap: normal;
   font-size: 17px;
-  background-color: #ffffff83;
+  /* background-color: #ffffff83; */
   border-radius: 7px;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 .whyChooseSection{
@@ -475,7 +473,7 @@ p::selection{
 }
 
 .whyHr{
-  border-color: rgba(255, 255, 255, 0.211);
+  border-color: #612407;
 }
 
 .projects{
